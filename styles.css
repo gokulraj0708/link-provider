@@ -1,0 +1,38 @@
+/* Remove default margin */
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* Animated Gradient Background */
+    background: linear-gradient(-45deg, #ff6b6b, #6c5ce7, #00cec9, #fab1a0);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Center Content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Text Style */
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+/* Animation Keyframes */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
